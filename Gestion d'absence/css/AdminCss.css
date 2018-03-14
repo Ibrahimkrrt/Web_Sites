@@ -1,0 +1,500 @@
+*{
+	margin: 0;
+	padding:0;
+	font-family: "Adam";
+}
+h1,
+h2 {
+    margin: 0;
+    color: #000;
+    -moz-text-shadow: 0 3px 3px #000000;
+    -webkit-text-shadow: 0 3px 3px #000000;
+    text-shadow: 0 3px 3px #000000;
+}
+    
+h1 {
+    font-size: 60px;
+    margin: 0 0 10px;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 18px;
+}
+.Center-Box{
+	/*background-color: red;*/
+	width: 75%;
+	margin: 0 auto;
+}
+
+#Header .Center-Box{
+	background-color: #04B4AE;
+	z-index: 100;
+}
+
+#Horizonal {
+	width: 100%;
+	position: fixed;
+}
+
+#Horizonal nav{
+	display: flex;
+	text-align: right;
+	text-align: center;
+	padding:1%;
+}
+
+#Horizonal nav div {
+	flex: 1;
+	text-align: center;
+}
+
+#Horizonal nav div a{
+	text-decoration: none;
+	cursor: pointer;
+	color : #fff;
+	font-size: 1.9em;
+
+}
+
+#Horizonal nav div img{
+	float: left;
+	width: 30;
+}
+/*====================================*//*====================================*//*====================================*/
+/*BUTTON STYLE*/
+.dropbtn {
+	background: transparent; 
+    color: #FFF;
+    /*padding: 16px;*/
+
+    font-size: 1.9em;
+    border: none;
+    cursor: pointer;
+}
+
+/* DropDown Content is "Hidden" with "display: none;" */
+.DropDown_Content{
+	display: none;
+    position: absolute;
+    background: transparent;
+    min-width: 15%;
+    margin-left:5%;
+
+    /*box-shadow: 0px 8px 16px rgba(0,0,0,0.5); */
+
+}
+/* Links Decoration inside the DropDown */
+.DropDown_Content a {
+
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align :right;
+    
+}
+/* Show the DropDown Content on hover */
+.DropDown:hover .DropDown_Content {
+    display: block;
+    background:#04B4AE;
+
+
+}
+/*=================================================================*/
+/*=================================================================*/
+/*=================================================================*/
+#Bg-white{
+  background-image: url("../images/Sky.jpg");
+	text-align: center;
+	height: 800px;
+}
+#Layout{
+	width: 100%;
+	display: table;
+	background-color: rgba(0,0,0,0.3);
+	height: 800px;
+}
+#Black-Line{
+	display: table-cell;
+	vertical-align: middle;
+}
+#Black-Line #While-Line{
+  padding: 70px;
+	height: 50%;
+
+	background-color: rgba(255,255,255,0.5);
+}
+/*.Style-Brd{
+	height: 300px;
+	margin: 50px;
+	padding: 20px;
+	color: #E1E1E1;
+	background-color: #04B4AE;
+	box-shadow: inset 0px 0px 20px #000;
+}*/
+/*.Style-Brd h1{height: 75%;color: #FFF;font-size: 20px;}*/
+
+
+select {
+  /*margin: 50px;*/
+  border: 1px solid #111;
+  background: transparent;
+  width: 200px;
+  padding: 5px 35px 5px 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  height: 35px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-transition: all 0.2s ease;
+     -moz-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+  background: url(./Icon/favicon.ico) 96% / 15% no-repeat #eee;
+}
+select:hover {
+	margin: 0 auto;
+	box-shadow: inset 1px 1px 5px #000;
+}
+
+#Bg-Color-01{
+	padding: 50px;
+	background-color: #04B4AE;
+	color: #fff;
+}
+#Color-Ajust-01{
+	border :1px solid #04B4AE;
+}
+
+
+#Color-Ajust-02{
+ 	color: #fff;
+ 	border :5px solid #FFF;
+ 	border-right: 0;
+}
+.Not-colored .Mode-02{
+ 	color: #fff;
+ 	border :5px solid #FFF;
+ 	border-right: 0;
+	width: 100%;
+	padding: 5px 20px 5px 20px;
+	border-radius: 10px 0px 0px 10px;
+	background: transparent;
+ 	-webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+ }
+
+
+#Bg-Color-02{
+	padding: 50px;
+	background-color: #FFF;
+}
+#inlines p{
+	margin: 20px ;
+	font-size: 25px;
+}
+.Show-List { 
+	margin: 10px;
+ 	background: transparent;
+  padding: 16px;
+ 	border: 1px solid #e2e2e2;
+ 	border-radius: 10px 10px 10px;
+    -webkit-transition: all 0.2s ease;
+       -moz-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+}
+.White-Font .MouvesLbl{
+	color: #FFF;
+}
+
+li {
+  margin: 5px 0px 5px 0px;
+  display: flex;
+  
+}
+li label {
+	flex: 1;
+
+}
+
+li button {
+	margin: 0 auto;
+	width: 150px;
+	padding: 5px;
+}
+
+/*
+.Special{
+	list-style: none;
+  	letter-spacing: 1px;
+  	font: 12px 'Tahoma';
+  	line-height: 24px;
+  	color: #444;
+  	background-color: red;
+  	width: 0;
+  	margin: 1px;
+  	-webkit-transition: all 0.8s ease;
+  	   -moz-transition: all 0.8s ease;
+  	        transition: all 0.8s ease;
+}
+
+
+ul:hover .Special {margin: 0 auto;}
+*/
+.MouvesLbl{
+	list-style: none;
+  	letter-spacing: 1px;
+  	font: 12px 'Tahoma';
+  	line-height: 24px;
+  	color: #5E5E5E;
+  	width:0;
+ 	text-align: right;
+ 	white-space: nowrap;
+ 	-webkit-transition: width 0.8s ease;
+       -moz-transition: width 0.8s ease;
+            transition: width 0.8s ease;
+}
+li input {
+	list-style: none;
+  	letter-spacing: 1px;
+  	font: 12px 'Tahoma';
+  	line-height: 24px;
+  	color: #444;
+  	width:200px;
+ 	text-align: left;
+ 	border : 0;
+ 	background-color: #5E5E5E;/*04B4AE;*/
+ 	color: #FFF;
+ 	border-radius: 5px 5px 5px 5px;
+ 	padding: 0px 5px 0px 5px;
+	
+}
+.MouvesIpt{
+	flex: 1;
+	text-align: right;
+
+}
+.MouvesIpt div {
+	line-height: 24px;
+  	width:100%;
+ 	text-align: right;
+ 	white-space: nowrap;
+ 	-webkit-transition: width 0.8s ease;
+       -moz-transition: width 0.8s ease;
+            transition: width 0.8s ease;
+}
+
+ul{}
+/*
+li:nth-child(odd) {
+	width: 100%;
+	text-align: right;
+	background: #E3E3E3;
+	}
+*/
+
+
+table, td, th {    
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+	font: 12px 'Tahoma';
+    padding: 15px;
+ 	-webkit-transition: all 0.2s ease;
+       -moz-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+}
+td{	font: 12px 'Tahoma';}
+.Not-colored {
+	text-align: center;
+	border:none;
+	border-right: 1px solid #FFF;
+	border-top: 1px solid #FFF;
+	border-bottom: 1px solid #FFF;
+}
+.Flexed{
+	display: flex;
+	width: 100%;
+}
+.Not-colored .Mode{
+	border : 5px solid #04B4AE ;
+	border-right: 0;
+	width: 100%;
+	padding: 5px 20px 5px 20px;
+	border-radius: 10px 0px 0px 10px;
+	background: transparent;
+	color: #04B4AE;
+ 	-webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+.Not-colored .Del{
+	border : 5px solid #c0392b ;
+	border-left: 0;
+	width: 100%;
+	padding: 5px 20px 5px 20px;
+	border-radius: 0px 10px 10px 0px;
+	background: transparent;
+	color: #c0392b;
+ 	-webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+
+
+td:hover {background-color: rgba(162, 217, 206,0.8);font-size: 18px; color: #fff}
+.Not-colored:hover {background: transparent;}
+.Mode:hover {color: #FFF;background: #04B4AE;}
+.Del:hover {color: #FFF;background: #c0392b;}
+ul:hover > li label .MouvesLbl {width: 97%;}
+ul:hover > li .MouvesIpt div{width: 25%;}
+.Show-List:hover {box-shadow: inset 1px 1px 5px #000;}
+.Mode-02:hover {color: #04B4AE;background: #FFF;}
+/*==========================================*//*=========================================*/
+.General-Vew-Style{
+	padding: 50px;
+	color: #fff;
+	background-color: #5E5E5E;
+	text-align: center;
+}
+.Flexed div{
+	flex: 1
+}
+
+.General-Vew-Style div {
+	margin: 20px;
+	font-size: 20px;
+}
+
+.Module-Titles span {
+	font-size: 50px;
+	-webkit-text-shadow:5px 5px 3px #FFF;
+	   -moz-text-shadow:5px 5px 3px #FFF;
+	        text-shadow:5px 5px 3px #000;
+}
+
+.Module-Titles .Flexed {
+	border-bottom: 1px solid #fff;
+}
+.Module-Titles .Flexed{
+	border-top: 1px solid #fff;
+}
+
+.Num-Abs{
+	text-align: left;
+	color: #E5E5E5;
+}
+
+
+.El-Mod{
+	padding-top: 5px;
+	text-align: right;
+}
+
+
+.Num-Abs span {
+	font-size: 30px;
+	text-align: left;
+	padding: 5px;
+	text-shadow:none;
+}
+
+/*=================================================================*/
+/*=================================================================*/
+/*=================================================================*/
+
+#Footer-Color {
+	
+    background-color:#E1E1E1;
+    height: 300px;
+}
+#Footer-Color .Center-Box {
+    height: 100%;
+    width: 100%;
+    /*background-color:red;*/
+}
+
+#Footer-Color .Center-Box #Right-Info {
+    float: right;
+    display: flex;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+}
+
+#Footer-Color .Center-Box #Right-Info div{
+    flex: 1;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    margin-top: 20%;
+    padding-top: 10%;
+    word-wrap: break-word;
+    height: 50%;
+
+}
+#Footer-Color .Center-Box #Right-Info .Hov img{
+    /*box-shadow: -1px 2px 10px 3px rgba(0, 0, 0, 0.3) inset;*/
+    -webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+
+}
+#Footer-Color .Center-Box #Right-Info .Hov p{
+    /*box-shadow: -1px 2px 10px 3px rgba(0, 0, 0, 0.3) inset;*/
+    -webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+
+}
+
+#Footer-Color .Center-Box #Right-Info .Hov:hover img{
+
+    -webkit-filter: hue-rotate(45deg);
+       -moz-filter: hue-rotate(45deg);
+            filter: hue-rotate(45deg);
+    
+}
+#Footer-Color .Center-Box #Right-Info .Hov:hover p{
+    text-shadow:1px 1px 5px #000;
+    
+}
+
+#Footer-Color .Center-Box #left-Logo {
+    float: left;
+    text-align: center;
+    /*background-color: white;*/
+    width: 25%;
+    height: 100%;
+}
+#Footer-Color .Center-Box #left-Logo div{
+    margin: 75px;
+    /*background-color: red;*/
+}
+#Footer-Color .Center-Box #left-Logo img{
+    width: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*====================================*//*====================================*//*====================================*/
+@font-face {
+    font-family: Adam;
+    src: url(Adam.otf);
+}/*====================================*//*====================================*//*====================================*/

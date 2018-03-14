@@ -1,0 +1,530 @@
+/*remember: -Webkit-  /* Chrome, Safari, Opera */
+
+*{
+	font-family: Adam;
+	-webkit-box-sizing: border-box; 
+	   -moz-box-sizing: border-box; 
+	        box-sizing: border-box;
+
+}
+
+#Width_Screen{
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	background-color: #E1E1E1;
+}
+/*====================================*//*====================================*//*====================================*/
+#Header {
+	z-index: 100;
+	margin: 0;
+	padding : 0;
+	position: fixed;
+	text-align: right;
+	background: transparent;
+	-webkit-transition: background 0.5s ;
+	   -moz-transition: background 0.5s ;
+	   		transition: background 0.5s ;
+	width: 100%
+}
+
+#Header ul{
+	margin: 0;
+	padding : 0;
+	/*background: #000;/*rgba(24,150,255,0);*/
+}
+#Header ul #logo{
+	float: left;
+}
+#Header ul li{
+	display: inline-block;
+	text-align: left;
+	margin: 10;
+	margin-left: 20;
+	margin-right: 20;
+}
+#Header ul li a{
+	text-decoration: none;
+	cursor: pointer;
+	color : #FFF;
+	font-size: 20;
+}
+/*====================================*//*====================================*//*====================================*/
+/*BUTTON STYLE*/
+.dropbtn {
+	background: transparent; 
+    color: #FFF;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+/* DropDown Content is "Hidden" with "display: none;" */
+.DropDown_Content{
+	display: none;
+    position: absolute;
+    background: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.5); 
+}
+/* Links Decoration inside the DropDown */
+.DropDown_Content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+}
+/* Show the DropDown Content on hover */
+.DropDown:hover .DropDown_Content {
+    display: block;
+    background:#000;
+
+}
+/*====================================*//*======NOT UNCLUDED YET======*//*====================================*/
+#Wheel_Style{
+	width: 90px; height: 90px;
+	margin: 3em;
+	background: #fff;
+	border: 20px solid #aaa;
+	border-radius: 30px;
+	transition: all 2s;
+}
+#Wheel_Style:hover {
+	border-color: #333;
+	transform: rotate(1080deg);
+	border-radius: 50%;
+}
+/*====================================*//*====================================*//*====================================*/
+#OverLay_00{
+	height:800px;
+	/*margin-top: -95px;*/
+	background: url("./image/Log_Background_01.jpg") right;
+	color: #FFF;
+}
+/*BACKGROUND and POSITION*/
+#Left_Content{
+	position: relative;
+	text-align: center;
+	margin-top: 170px;
+	float: left;
+	background: #2E2E2E;
+	left:20%;
+	-webkit-box-shadow: 5px 5px 10px #000;
+	   -moz-box-shadow: 5px 5px 10px #000;
+	        box-shadow: 5px 5px 10px #000;
+}
+/*================*/
+/*Register Decoration*/
+#Left_Content h4{
+	margin: 30px;
+	margin-bottom:10px;
+	text-align: left;
+	font-size: 35;
+}
+/*Remove the Fieldset Default Borde*/
+#Left_Content fieldset{
+	border: 0;
+}
+/*Given Style to Input*/
+#Left_Content fieldset input {
+	margin: 10px;
+	padding: 10px;
+	font-size: 25;
+	/*text-align: center;*/
+	display: block;
+	border: 0px #2E2E2E solid ;
+	border-radius: 20px;
+}
+/*Button Color and TRANSITION over 1s with ease*/
+#Left_Content fieldset button{
+	background-color: #04B4AE;
+	color: #FFF;
+	padding: 10px;
+	padding-left: 95px;
+	padding-right: 95px;
+	font-size: 25;
+	border: 0px #2E2E2E solid ;
+	border-radius: 20px;
+	cursor: pointer;
+	-webkit-transition: background-color 1s ;
+	   -moz-transition: background-color 1s ;
+	   		transition: background-color 1s ;
+}
+/*Change color with Transition*/
+#Left_Content fieldset button:hover {
+	background-color: #000;
+}
+/*================*/
+/*Register Decoration*/
+#Right_Content{
+	position: relative;
+	text-align: center;
+	margin-top: 95px;
+	float: right;
+	margin-top: 180px;
+	right: 20%;
+}
+#Right_Content h4{
+	text-align: left;
+	font-size: 40;
+}
+
+#Right_Content p{
+	text-align: left;
+	font-size: 20;
+}
+
+#Space{
+	height: 20px;
+}
+
+#Right_Content a{
+	margin-left: -60%;
+	text-decoration: none;
+	color:#FFF;
+	font-size: 25;
+	background-color:#04B4AE;
+	border-radius: 20px;
+	padding: 10px;
+	cursor: pointer;
+	-webkit-transition: background-color 1s ease;
+	   -moz-transition: background-color 1s ease;
+	   		transition: background-color 1s ease;
+
+}
+
+#Right_Content a:hover {
+	background-color: #000;
+}
+/*====================================*//*====================================*//*====================================*/
+#OverLay_01{
+	width:50%;
+	height:500px;
+	color: #000;
+	margin:0 auto;
+}
+#Description{
+	margin : 30px ;
+	font-size: 30;
+	text-align: center;
+}
+/*============*/
+#Split_the_deals{
+	width:100%;
+}
+
+#Split_the_deals #Deal_01  {
+	position: relative;
+	float: left;
+	text-align: center;
+	width:250px;
+	background: #FFF;
+	color: #000;
+	padding-bottom: 20;
+	
+}
+#Split_the_deals #Deal_02  {
+	position: relative;
+	float: right;
+	text-align: center;
+	width:250px;
+	background: #FFF;
+	color: #000;
+	padding-bottom: 20;
+
+}
+#Split_the_deals #Deal_03  {
+	position: relative;
+	margin:0 auto;
+	text-align: center;
+	width:250px;
+	background: #FFF;
+	color: #000;
+	padding-bottom: 20;
+}
+/*============*/
+
+.Head_Style {
+	color: #FFF;
+	background: #04B4AE;
+	border: 0px solid black;
+}
+/*
+	-webkit-transition: all 0.5s; 
+       -moz-transition: all 0.5s; 
+            transition: all 0.5s;
+}
+.Head_Style:hover {
+	border-bottom: 5px solid #04B4AE;
+}
+*/
+#Split_the_deals #Deal_01:hover {
+	border-bottom: 5px solid #04B4AE;
+}
+#Split_the_deals #Deal_02:hover {
+	border-bottom: 5px solid #04B4AE;
+}
+#Split_the_deals #Deal_03:hover {
+	border-bottom: 5px solid #04B4AE;
+}
+
+/*============*/
+
+
+
+
+#Split_the_deals #Deal_02 li {
+	text-align: center;
+	list-style-type: none;
+	margin: 10px;
+	
+}
+#Split_the_deals #Deal_01 li {
+	text-align: center;
+	list-style-type: none;
+	margin: 10px;
+	
+}
+#Split_the_deals #Deal_03 li {
+	text-align: center;
+	list-style-type: none;
+	margin: 10px;
+	
+}
+
+/*============*/
+
+.Img-Product{
+    overflow: hidden;
+    position: relative;
+    display: block;
+    margin-top: -20 ;
+}
+
+.Cross-Price{
+	text-decoration: line-through;
+	font-size: 25;
+}
+.Promo-Price{
+	font-size: 40;
+}
+.Go_To_Product {
+	text-decoration: none;
+	color:#FFF;
+	font-size: 20;
+	background-color:rgba(4,180,174,1) ;/*(2,71,68,1);*/
+	border: 3px solid #04B4AE;
+	border-radius: 20px;
+	padding: 5px;
+	cursor: pointer;
+	-webkit-transition: all 1s ease;
+	   -moz-transition: all 1s ease;
+	   		transition: all 1s ease;
+
+}
+
+.Go_To_Product:hover {
+	background-color:rgba(4,180,174,0.001);
+	color : #04B4AE;
+}
+
+/*====================================*//*====================================*//*====================================*/
+#OverLay_02{
+	width:100%;
+	height:500px;
+	color: #FFF;
+	margin:0 auto;
+	background: #2E2E2E;
+}
+
+#Dimension{
+	text-align: center;
+	width: 50%;
+	margin:0 auto;
+}
+
+.slider {
+    width: auto;
+    margin: 10px 20px 50px;
+}
+
+.slick-slide {
+    background: #2E2E2E;
+    color: white;
+    padding: 40px 0;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 1.5%;
+}
+
+.slick-slide img{
+	margin: 0 auto;
+}
+/*====================================*//*====================================*//*====================================*/
+#OverLay_03{
+	width:100%;
+	height:900px;
+	color: #FFF;
+	margin:0 auto;
+	padding-top: 20px;
+	padding-bottom: -20px;
+	background: #04B4AE;
+}
+
+#Resize{
+	width: 70%;
+	margin:0 auto;
+}
+#Right_Vid{
+
+	margin-right: 0;
+	position: relative;
+	float: right;
+	text-align: center;
+	margin-top: 80;
+	height: 450px;
+	width: 49%;
+}
+#Left_Par{
+	margin-left: 50;
+	position: relative;
+	float: left;
+	text-align: left;
+	margin-top: 55;
+	width: 600px;
+	height: 475px;
+}
+
+#Left_par a{
+	position: relative;
+	text-decoration: none;
+	margin-left : 25% ; 
+	top: 30px;
+	color: #04B4AE;
+	font-size: 25;
+	background-color:#FFF;
+	border:3px solid #FFF;
+	border-radius: 20px;
+	padding: 10px;
+	cursor: pointer;
+	-webkit-transition: background-color 1s ease;
+	   -moz-transition: background-color 1s ease;
+	   		transition: background-color 1s ease;
+
+}
+#Left_par a:hover {
+	background-color:rgba(4,180,174,0.001);
+	color : #FFF;
+}
+
+#Split_To_4{
+	margin: 0 auto;
+	margin-top: 50px;
+	padding: 0;
+	background: #FFF;
+	width: 100%;
+	text-align: center;
+}
+#First{
+	float: left;
+	width: 25%;
+}
+
+#Second{
+	float: right;
+	width: 25%;
+}
+#Third{
+	float: right;
+	width: 25%;
+}
+#Fourth{
+	float: right;
+	width: 25%;
+}
+#Split_To_4 img{
+	width: 64px;
+	-webkit-transition: all 0.2s ease;
+	   -moz-transition: all 0.2s ease;
+	   		transition: all 0.2s ease;
+}
+#Split_To_4 img:hover {
+	width: 80;
+
+}
+
+/*====================================*//*====================================*//*====================================*/
+#OverLay_04{
+	width:100%;
+	height:200px;
+	color: #000;
+	margin:0 auto;
+	background: #FFF;
+}
+
+#Footer_Size{
+	width:80%;
+	margin:0 auto;
+	height:200px;
+}
+
+#Footer_Left_Side{
+	float: left;
+	width: 30%
+	height:200px;
+}
+#Footer_Left_Side img{
+	text-align: center;
+	margin-top: 20;
+	margin-left: 50%;
+}
+
+#Footer_Right_Side{
+	float: right;
+	width: 50%
+	background:cyan;
+	text-align: center;
+}
+
+#Footer_Right_Side ul li{
+	display: inline-block;
+	padding:40px;
+	border-left: 2px solid #04B4AE;
+	
+}
+.Marked img{
+	margin-right :30px;
+	padding: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*====================================*//*====================================*//*====================================*/
+@font-face {
+    font-family: Adam;
+    src: url(Adam.otf);
+}/*====================================*//*====================================*//*====================================*/

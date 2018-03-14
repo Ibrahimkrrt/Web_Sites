@@ -1,0 +1,390 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+body{
+	background: url("../images/Bg_01.jpg");
+	background-size: 2000px;
+	background-repeat: no-repeat;
+	background-color: #2E2E2E;
+}
+#index_Body {
+	background: url("../images/Background.jpg");
+	background-size: 2000px;
+	background-repeat: no-repeat;
+	background-color: #2E2E2E;
+}
+.container_00{
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+}
+
+.flex{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+.flexed{
+	width: 50%;
+	height: 100%;
+	flex: 1;
+	display: table;
+	text-align: center;
+}
+
+.mid{
+	margin: 0 auto;
+	display: table-cell;
+	vertical-align: middle;
+}
+#BlackSide{
+	background-color: rgba(46,46,46,0.75);
+}
+#Left_Placement{
+	text-align: right;
+	margin: 50px;
+	color: #FFF;
+	font-size: 40px;
+}
+#WhiteSide{
+
+	background-color: rgba(255,255,255,0.5);
+}
+#Right_Placement{
+	margin: 50px;
+	text-align: left;
+	color: #000;
+	font-size: 20px;
+}
+#btn_View{
+	padding: 20px;
+	padding-right: 50px;
+	padding-left: 50px;
+	border-radius: 15px 15px 15px;
+	background: #2E2E2E;
+	color: #FFF;
+	text-decoration : none;
+	font-size: 20px;
+	-webkit-transition : all 0.3s ease ;
+	   -moz-transition : all 0.3s ease ;
+  		 -o-transition : all 0.3s ease ;
+			transition : all 0.3s ease ;
+}
+
+#btn_View:hover{
+	border-radius: 30px 30px 30px;
+	-webkit-box-shadow : 0px 0px 15px #000;
+	   -moz-box-shadow : 0px 0px 15px #000;
+  		 -o-box-shadow : 0px 0px 15px #000;
+			box-shadow : 0px 0px 15px #000;
+	-webkit-text-shadow : 0px 0px 15px #FFF;
+	   -moz-text-shadow : 0px 0px 15px #FFF;
+  		 -o-text-shadow : 0px 0px 15px #FFF;
+			text-shadow : 0px 0px 15px #FFF;
+}
+
+/*==========================================================
+============================================================
+==========================================================*/
+
+
+.Support{
+	padding: 20px;
+	background: #2E2E2E;
+	font-size: 40px;
+	color: #FFF;
+}
+
+.container_01{
+	display: table;
+	width: 100%;
+	height: 700px;
+}
+.Sub_container_01{
+	display: table-cell;
+	text-align: center; 
+	vertical-align: middle;
+}
+.Sub_container_01 a {
+	display: block;
+	margin: 20px;
+	padding: 20px;
+	padding-right: 50px;
+	padding-left: 50px;
+	border-radius: 15px 15px 15px;
+	background: #2E2E2E;
+	color: #FFF;
+	text-decoration : none;
+	font-size: 20px;
+	-webkit-transition : all 0.3s ease ;
+	   -moz-transition : all 0.3s ease ;
+  		 -o-transition : all 0.3s ease ;
+			transition : all 0.3s ease ;
+}
+.Sub_container_01 a:hover{
+	border-radius: 30px 30px 30px;
+	-webkit-box-shadow : 0px 0px 15px #000;
+	   -moz-box-shadow : 0px 0px 15px #000;
+  		 -o-box-shadow : 0px 0px 15px #000;
+			box-shadow : 0px 0px 15px #000;
+	-webkit-text-shadow : 0px 0px 15px #FFF;
+	   -moz-text-shadow : 0px 0px 15px #FFF;
+  		 -o-text-shadow : 0px 0px 15px #FFF;
+			text-shadow : 0px 0px 15px #FFF;
+}
+
+#table_container{
+	margin: 0 auto;
+	height: 700px;
+}
+.Centered_Table{
+	padding: 20px;
+	padding-top: 50px;
+	text-align:center;
+	margin: 0 auto;
+	width: 70%;
+}
+.Centered_Table table{
+	text-align:center;
+	margin: 0 auto;
+	border-collapse: collapse;
+
+}
+
+.Centered_Table table td, th {
+	width: 200px;
+	border: 1px solid #BBB;
+    padding: 10px;
+}
+
+.Centered_Table table th{
+	background: #2E2E2E;
+	color: #FFF;
+}
+.Centered_Table table td{
+	color: #2E2E2E;
+	background: #FFF;
+}
+.Centered_Table table .Remove_Style{
+	background: none;
+	border:none;
+}
+.Centered_Table table .Remove_Style a{
+	padding: 10px;
+	padding-left: 150px;
+	padding-right: 150px;
+	text-decoration: none;
+	color : #FFF;
+	background: #2E2E2E;
+	border: 1px solid #2E2E2E;
+	border-radius: 0px 0px 15px 15px;
+	-webkit-transition : all 0.3s ease ;
+	   -moz-transition : all 0.3s ease ;
+  		 -o-transition : all 0.3s ease ;
+			transition : all 0.3s ease ;
+}
+
+.Centered_Table table .Remove_Style a:hover {
+	border-radius: 0px 0px 30px 30px;
+	-webkit-box-shadow : 0px 5px 15px #000;
+	   -moz-box-shadow : 0px 5px 15px #000;
+  		 -o-box-shadow : 0px 5px 15px #000;
+			box-shadow : 0px 5px 15px #000;
+	-webkit-text-shadow : 0px 0px 15px #FFF;
+	   -moz-text-shadow : 0px 0px 15px #FFF;
+  		 -o-text-shadow : 0px 0px 15px #FFF;
+			text-shadow : 0px 0px 15px #FFF;
+}
+
+.Centered_Table table .Remove_Style_01{
+	background: none;
+	border:none;
+}
+
+#Edit_btn{
+	width: 100px;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	color : #FFF;
+	float: right;
+	text-align: right;
+	background: #008E5F;
+	border: 1px solid #FFF;
+	border-radius: 15px 0px 0px 15px;
+	-webkit-transition : all 0.3s ease ;
+	   -moz-transition : all 0.3s ease ;
+  		 -o-transition : all 0.3s ease ;
+			transition : all 0.3s ease ;
+}
+
+#Edit_btn:hover{
+	color : #008E5F;
+	border-color: #008E5F;
+	background: #FFF;
+	border-radius: 30px 0px 0px 30px;
+	-webkit-box-shadow : 0px 0px 15px #008E5F;
+	   -moz-box-shadow : 0px 0px 15px #008E5F;
+  		 -o-box-shadow : 0px 0px 15px #008E5F;
+			box-shadow : 0px 0px 15px #008E5F;
+	-webkit-text-shadow : 0px 0px 15px #FFF;
+	   -moz-text-shadow : 0px 0px 15px #FFF;
+  		 -o-text-shadow : 0px 0px 15px #FFF;
+			text-shadow : 0px 0px 15px #FFF;
+}
+
+#Remove_btn{
+	width: 100px;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	text-align: left;
+	color : #FFF;
+	background: #F22F50;
+	border: 1px solid #FFF;
+	border-radius: 0px 15px 15px 0px;
+	-webkit-transition : all 0.3s ease ;
+	   -moz-transition : all 0.3s ease ;
+  		 -o-transition : all 0.3s ease ;
+			transition : all 0.3s ease ;
+}
+
+#Remove_btn:hover{
+	color : #F22F50;
+	border-color: #F22F50;
+	background: #FFF;
+	border-radius: 0px 30px 30px 0px;
+	-webkit-box-shadow : 0px 0px 15px #F22F50;
+	   -moz-box-shadow : 0px 0px 15px #F22F50;
+  		 -o-box-shadow : 0px 0px 15px #F22F50;
+			box-shadow : 0px 0px 15px #F22F50;
+	-webkit-text-shadow : 0px 0px 15px #FFF;
+	   -moz-text-shadow : 0px 0px 15px #FFF;
+  		 -o-text-shadow : 0px 0px 15px #FFF;
+			text-shadow : 0px 0px 15px #FFF;
+}
+
+.Form_sty{
+	display: table;
+	height: 700px;
+	width: 100%;
+	text-align: center;
+
+}
+.Form_sty div{
+	display: table-cell;
+	vertical-align: middle;	
+}
+.Form_sty div span{
+	display: block;
+	background: rgba(255,255,255,0.25);
+	padding-top: 15px;
+	padding-bottom: 30px; 
+}
+
+.Lbl{
+	display: inline-block;
+	width: 200px;
+	text-align: left;
+	padding: 10px;
+	font-size: 20px;
+	margin: 10px;
+}
+
+.Ipt{
+	border-radius: 5px 5px 5px;
+	border: 1px solid #000;
+	display: inline-block;
+	text-align: left;
+	font-size: 20px;
+	width: 200px;
+	padding: 5px;
+	color: #008E5F;
+}
+
+.gender_sty{
+	border-radius: 5px 5px 5px;
+	border: 1px solid #000;
+	padding: 20px;
+	margin: 0 auto;
+	width: 410px;
+
+	display: inline-block;
+}
+
+.gender_sty p {
+	padding: 5px;
+	display: inline-block;
+}
+
+#Adjust{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+ .sbt{
+ 	border-radius: 5px 5px 5px;
+	border: 1px solid #000;
+	display: inline-block;
+	text-align: center;
+	font-size: 20px;
+	width: 200px;
+	padding: 5px;
+	color: #2E2E2E;
+ }
+
+ .Error{
+ 	position: absolute;
+ 	display: block;
+ 	padding: 30px;
+ 	color: #FFF;
+ }
+
+.Error h1{
+	-webkit-text-stroke-width: 1px;
+ 	   -moz-text-stroke-width: 1px;
+ 		 -o-text-stroke-width: 1px;
+ 			text-stroke-width: 1px;
+	-webkit-text-stroke-color: #2E2E2E;
+	   -moz-text-stroke-color: #2E2E2E;
+	     -o-text-stroke-color: #2E2E2E;
+			text-stroke-color: #2E2E2E;
+}
+
+ footer{
+ 	z-index: 2px;
+ 	position: absolute;
+ 	width: 100%;
+ 	bottom: 0px;
+ 	height: 100px;
+ 	background: #2E2E2E;
+ }
+
+ footer button {
+ 	display: inline-block;
+ 	background: #2E2E2E;
+ 	text-align: right;
+ 	border:none;
+ 	color: rgba(255,255,255,0.5);
+ 	width: 150px;
+ 	font-size: 72px;
+ 	height : 100%;
+	-webkit-transition : all 0.3s ease ;
+	   -moz-transition : all 0.3s ease ;
+  		 -o-transition : all 0.3s ease ;
+			transition : all 0.3s ease ;
+ }
+
+ footer button:hover {
+ 	padding-right:100px;
+ 	color: rgba(255,255,255,0.75);
+ }
+
+ footer h1 {
+ 	display: inline-block;
+ 	color: #FFF;
+ 	font-size: 72px;
+ }

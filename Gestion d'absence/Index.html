@@ -1,0 +1,228 @@
+<html>
+<head>
+	<title>Projet</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/MyCss.css">
+
+
+
+	<style>
+	/* Cachons la case à cocher */
+	[type="checkbox"]:not(:checked),
+	[type="checkbox"]:checked {
+	  position: absolute;
+	  left: -9999px;
+	}
+	 
+	/* on prépare le label */
+	[type="checkbox"]:not(:checked) + label,
+	[type="checkbox"]:checked + label {
+	  position: relative; /* permet de positionner les pseudo-éléments */
+	  padding-left: 25px; /* fait un peu d'espace pour notre case à venir */
+	  cursor: pointer;    /* affiche un curseur adapté */
+	}
+	
+	/* Aspect des checkboxes */
+	/* :before sert à créer la case à cocher */
+	[type="checkbox"]:not(:checked) + label:before,
+	[type="checkbox"]:checked + label:before {
+	  content: '';
+	  position: absolute;
+	  left:0; top: 2px;
+	  width: 17px; height: 17px; /* dim. de la case */
+	  border: 1px solid #aaa;
+	  background: #f8f8f8;
+	  border-radius: 3px; /* angles arrondis */
+	  box-shadow: inset 0 1px 3px rgba(0,0,0,.3) /* légère ombre interne */
+	}
+	
+
+
+	/* Aspect général de la coche */
+	[type="checkbox"]:not(:checked) + label:after,
+	[type="checkbox"]:checked + label:after {
+	  content: '✔';
+	  position: absolute;
+	  top: 0; left: 4px;
+	  font-size: 14px;
+	  color: #09ad7e;
+	  transition: all .2s; /* on prévoit une animation */
+	  
+	}
+	/* Aspect si "pas cochée" */
+	[type="checkbox"]:not(:checked) + label:after {
+	  opacity: 0; /* coche invisible */
+	  transform: scale(0); /* mise à l'échelle à 0 */
+	}
+	/* Aspect si "cochée" */
+	[type="checkbox"]:checked + label:after {
+	  opacity: 1; /* coche opaque */
+	  transform: scale(1); /* mise à l'échelle 1:1 */
+	}
+	
+	/* aspect désactivée */
+	[type="checkbox"]:disabled:not(:checked) + label:before,
+	[type="checkbox"]:disabled:checked + label:before {
+	  box-shadow: none;
+	  border-color: #bbb;
+	  background-color: #ddd;
+	}
+	/* styles de la coche (si cochée/désactivée) */
+	[type="checkbox"]:disabled:checked + label:after {
+	  color: #999;
+	}
+	/* on style aussi le label quand désactivé */
+	[type="checkbox"]:disabled + label {
+	  color: #aaa;
+	}
+	 
+	/* aspect au focus de l'élément */
+	[type="checkbox"]:checked:focus + label:before,
+	[type="checkbox"]:not(:checked):focus + label:before {
+	  /*border: 1px dotted blue;*/
+	  outline: none;
+	}
+	</style>
+
+
+
+
+
+
+
+</head>
+<body>
+	<Header id="Header">
+	<div class="Center-Box" id="Horizonal">
+		<nav >
+        	<div><img src="./icon/Missing Logo-01.png"></div>
+			<div ><a href="#">Home</a></div>
+            <div class="DropDown"><button class="DropBtn" ><b>Login</b></button>
+            	<div class="DropDown_Content">
+            			<a href="Admin.Html">As Admin</a>
+            			<a href="Teacher.Html">As Teacher</a>
+            			<a href="Student.Html">As Student</a>
+            	</div>
+            </div>
+            <div ><a href="#">About</a></div>
+		<!--<ul ><b>
+        	<li id="Logo"><img src="shop.png"></li>
+			<li ><a href="#">Home</a></li>
+            <li class="DropDown"><button class="DropBtn" ><b>Sign in</b></button>
+            	<div class="DropDown_Content">
+            			<a href="#">As Admin</a>
+            			<a href="#">As Teacher</a>
+            			<a href="#">As Student</a>
+            	</div>
+            </li>
+            <li ><a href="http://www.dabblet.com/gist/1694171">About</a></li></b></ul> 
+        -->
+        </nav>
+    </div>
+	</Header>
+<div id="Bg-img">
+	<div class="Center-Box" >
+		<div id="Left-Layout">
+			<div id="left-Content">
+				
+				<h4>Login !</h4>
+				<fieldset>
+					<input placeholder="Account" type="text">
+					<input placeholder="Password" type="password">
+					<!--
+					<input placeholder="Confirm Password" type="password">
+					<input placeholder="Email." type="email">
+
+					<p id="Left">
+					   <input type="checkbox" id="Student">
+					   <label for="Student">Student</label>
+					</p>
+					<p id="Right">
+					   <input type="checkbox" id="Teacher">
+					   <label for="Teacher">Teacher</label>
+					</p>
+
+					<div id="Left"><label id="Teacher">Teacher<input type="checkbox" id="Teacher"></label></div><div id="Right"> <label id="Student">Student<input type="checkbox" id="Student"> </div>
+					-->
+					<button type="submit"><b>Connect</b></button>
+				</fieldset>
+				
+			</div>
+		</div>
+		<div id="Right-Layout">
+			<div id="Right-Content">
+				<div id="Teacher">
+				 	<h4><b>Dear Teacher</b></h4>
+					<p>Report your Daily Absent of the day <br>
+					As a teacher you gain permisson to report Absent evey day.<br>
+					<h5>if you come accros any trouble please concate us <br>at David_BK@Gmail.com</h5>
+					</p>
+				</div>
+				<div id="Student">
+					<h4><b>Dear Student</b></h4>
+					<p>Follow your Absent for the year<br>
+					We do not recommend to our Student to be Absent, but we know that sometime it's innavitable<br> therefor you can follow your Absent daily and get notification if nessesery
+					<h5>if you come accros any trouble please concate us <br>at David_BK@Gmail.com</h5>
+					</p>
+				</div></div>
+				<a href="#">
+					ENTER MY SECTION
+				</a>
+			</div>
+		</div>
+	</div>
+<div id="Bg-Color">
+	<div class="Center-Box">
+		<div id="Title">CESIM<br><h3>Inner rules</h3></div>
+		<br>
+		<div id="Action">
+			<div>
+				<a href="./Download_Link/Rule.txt" download>
+				<img  src="./icon/download-icon.png" ></a><br>
+				<br>
+				<i>Download CESIM's inner rules </i>
+			</div>
+			<div>
+				<a href="Lorem Ipsum.html#">
+				<img  src="./icon/reader-icon.png" ></a><br>
+				<i><br>Online view</i>
+			</div>
+			<div>
+				<a href="http://www.cesim.ma/">
+				<img  src="./icon/web-icon.png" ></a><br>
+				<br>
+				<i>Visit CESIM official website</i>
+			</div>
+		</div>
+	</div>
+	
+</div>
+<div id="Footer-Color">
+	<div class="Center-Box">
+		<div id="Left-Logo">
+			<div>
+				<img src="./icon/Missing Logo-01.png">
+			</div>
+		</div>
+		<div id="right-Info">
+			<div class="Felxed">
+				<div class="Hov">
+					<img src="./icon/localisation-icon-01.png" ></img><br><br><p>234 Wall Street<br>East Newyork, NY 20001</p>
+				</div>
+			</div >
+			<div class="Felxed">
+				<div class="Hov">
+					<img src="./icon/tel-icon-01.png" ></img><br><br><p>(+212) 699 554 422<br>(+212) 539 360 022</p>
+				</div>
+			</div>
+			<div class="Felxed">
+				<div class="Hov">
+					<img src="./icon/web2-icon-01.png" ></img><br><br><p>info@website.com<br>Support@website.com</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

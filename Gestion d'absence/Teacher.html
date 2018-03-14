@@ -1,0 +1,231 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+
+
+<meta charset="utf-8">
+<title>Teacher</title>
+<link rel="stylesheet" type="text/css" href="Teacher/css/style.css">
+<script src="Teacher/js/countdown.js"></script>
+
+
+
+
+
+
+
+
+
+  <style>
+  /* Cachons la case à cocher */
+  [type="checkbox"]:not(:checked),
+  [type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+  }
+   
+  /* on prépare le label */
+  [type="checkbox"]:not(:checked) + label,
+  [type="checkbox"]:checked + label {
+    position: relative; /* permet de positionner les pseudo-éléments */
+    padding-left: 25px; /* fait un peu d'espace pour notre case à venir */
+    cursor: pointer;    /* affiche un curseur adapté */
+  }
+  
+  /* Aspect des checkboxes */
+  /* :before sert à créer la case à cocher */
+  [type="checkbox"]:not(:checked) + label:before,
+  [type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left:0; top: 2px;
+    width: 17px; height: 17px; /* dim. de la case */
+    border: 1px solid #aaa;
+    background: #f8f8f8;
+    border-radius: 3px; /* angles arrondis */
+    box-shadow: inset 0 1px 3px rgba(0,0,0,.3) /* légère ombre interne */
+  }
+  
+
+
+  /* Aspect général de la coche */
+  [type="checkbox"]:not(:checked) + label:after,
+  [type="checkbox"]:checked + label:after {
+    content: '✔';
+    position: absolute;
+    top: 0; left: 4px;
+    font-size: 14px;
+    color: #09ad7e;
+    transition: all .2s; /* on prévoit une animation */
+    
+  }
+  /* Aspect si "pas cochée" */
+  [type="checkbox"]:not(:checked) + label:after {
+    opacity: 0; /* coche invisible */
+    transform: scale(0); /* mise à l'échelle à 0 */
+  }
+  /* Aspect si "cochée" */
+  [type="checkbox"]:checked + label:after {
+    opacity: 1; /* coche opaque */
+    transform: scale(1); /* mise à l'échelle 1:1 */
+  }
+  
+  /* aspect désactivée */
+  [type="checkbox"]:disabled:not(:checked) + label:before,
+  [type="checkbox"]:disabled:checked + label:before {
+    box-shadow: none;
+    border-color: #bbb;
+    background-color: #ddd;
+  }
+  /* styles de la coche (si cochée/désactivée) */
+  [type="checkbox"]:disabled:checked + label:after {
+    color: #999;
+  }
+  /* on style aussi le label quand désactivé */
+  [type="checkbox"]:disabled + label {
+    color: #aaa;
+  }
+   
+  /* aspect au focus de l'élément */
+  [type="checkbox"]:checked:focus + label:before,
+  [type="checkbox"]:not(:checked):focus + label:before {
+    /*border: 1px dotted blue;*/
+    outline: none;
+  }
+  </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+<Header id="Header">
+  <div class="Center-Box" id="Horizonal">
+    <nav>
+          <div><img src="./icon/Missing Logo-01.png" width="30"></div>
+      <div ><a href="./index.html">Home</a></div>
+            <div class="DropDown"><button class="DropBtn" ><b>Login</b></button>
+              <div class="DropDown_Content">
+                  <a href="Admin.Html">As Admin</a>
+                  <a href="./Teacher.Html">As Teacher</a>
+                  <a href="Student.Html">As Student</a>
+              </div>
+            </div>
+            <div ><a href="#">About</a></div>
+
+        </nav>
+    </div>
+</Header>
+
+<div id="Bg_Img">
+  <div class="Center-Box">
+    <h1>Dear Teacher</h1>
+    <h2>Our next session will start in :</h2>
+    <div id="CDT"></div>
+  </div>
+</div>
+
+<div id="Bg-color">
+  <div id="Top-content">
+    <h2>Please Check the Box near the absent student</h2>  
+    <h1>Student List:</h1>
+  </div>
+  <div id="Bot-content">
+    <div id="row-01">
+
+        <div class="Tleft"><p><i>First Name</i></p></div>  <div><i>Last Name</i></div>  <div class="Tright"><i>Absent</i></div>
+
+    </div>
+
+    <div id="row-01">
+
+        <div class="Tleft">Ayoub</div>  <div>Bakali</div>  
+        <div class="Tright">
+          <p>
+             <input type="checkbox" id="Id_Etd_01">
+             <label for="Id_Etd_01"><img src="./images/orange-warning.png" width="20"><br></label>
+          </p>
+        </div>
+
+    </div>
+
+    <div id="row-01">
+
+        <div class="Tleft">Bensaleh</div>  <div>Nirmine</div> 
+        <div class="Tright">
+          <p>
+             <input type="checkbox" id="Id_Etd_02">
+             <label for="Id_Etd_02"><img src="./images/warning.png" width="20"><br></label>
+          </p>
+        </div>
+    </div>
+
+    <div id="row-01">
+
+        <div class="Tleft">Kamouch</div>  <div>Nisrine</div>  
+        <div class="Tright">
+          <p>
+             <input type="checkbox" id="Id_Etd_03">
+             <label for="Id_Etd_03"><img src="./images/warning-01.png" width="20"><br></label>
+          </p>
+        </div>
+
+    </div>
+
+    <div id="row-01">
+
+        <div class="Tleft">Sabhar</div>  <div>Ibrahim</div>  
+        <div class="Tright">
+          <p>
+             <input type="checkbox" id="Id_Etd_04">
+             <label for="Id_Etd_04"><img src="" width="20"><br></label>
+          </p>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<div id="Footer-Color">
+  <div class="Center-Box">
+    <div id="left-Logo">
+      <div>
+        <img src="./icon/Missing Logo-01.png">
+      </div>
+    </div>
+    <div id="Right-Info">
+        <div class="Hov">
+          <img src="./icon/localisation-icon-01.png" ></img><br><br><p>234 Wall Street<br>East Newyork, NY 20001</p>
+        </div>
+        <div class="Hov">
+          <img src="./icon/tel-icon-01.png" ></img><br><br><p>(+212) 699 554 422<br>(+212) 539 360 022</p>
+        </div>
+        <div class="Hov">
+          <img src="./icon/web2-icon-01.png" ></img><br><br><p>info@website.com<br>Support@website.com</p>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+/*if($(':contains(Time is up!)').is(':visible')){
+  $( this ).next( "#Bot-content" ).css( "display", "block" );
+};*/
+</script>
+ 
+
+</body>
+</html>

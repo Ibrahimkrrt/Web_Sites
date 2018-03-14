@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/AdminCss.css">
+	<script src="AdminJs.js"></script>
+</head>
+<body>
+	<Header id="Header">
+	<div class="Center-Box" id="Horizonal">
+		<nav >
+        	<div><img src="./icon/Missing Logo-01.png" width="30"></div>
+			<div ><a href="index.Html">Home</a></div>
+            <div class="DropDown"><button class="DropBtn" ><b>Login</b></button>
+            	<div class="DropDown_Content">
+            			<a href="Admin.Html">As Admin</a>
+            			<a href="Teacher.Html">As Teacher</a>
+            			<a href="Student.Html">As Student</a>
+            	</div>
+            </div>
+            <div ><a href="#">About</a></div>
+        </nav>
+    </div>
+	</Header>
+
+
+
+
+<div id="Bg-white">
+	<div class="Center-Box" id="Layout">
+		<div id="Black-Line">
+			<div id="While-Line"> 
+			<div>
+				<h1>Dear Admin</h1>
+				
+
+
+			</div>
+			<!-- class="Flexed"> 
+
+
+			<div class="Style-Brd"><h1>Add and View Teachers and Students</h1>you have the wright to Add, Update or Delete a Student or a Teacher</div>
+			<div class="Style-Brd"><h1>Add and View Modules and El-Modules</h1>you have the wright to Add, Update or Delete a Module or a Module Element</div>
+			<div class="Style-Brd"><h1>Globale View of Absencs per Module</h1>you can see the Detail of every Absences in Ever Module Element and Module</div>-->
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div id="Bg-Color-01">
+	<div id="inlines">
+		<p>Managing the Modules / module Element
+		<select id="Mdl" onchange="MdlSelectCheck(this);">
+			<option value="" selected>...</option>
+			<option value="Add-M">Add new Module</option> 
+			<option value="Add-EM">Add new Module Element</option> 
+			<option value="Vew-M">Vew all Module</option> 
+			<option value="Vew-EM">Vew all Module Element</option> 
+		</select>
+		</p>
+	</div>
+
+	<div id="Hide-Show-Add-M" style="display:none;">
+		<ul class="Show-List White-Font" >
+  			<li><label> <div class="MouvesLbl" style="color:#FFF;">Module's ID</div> </label> <div class="MouvesIpt"><div><input placeholder="Id must be Unique" type="text" name="ID_Module"></div></div></li>
+  			<li><label> <div class="MouvesLbl">Module's Name</div> </label> <div class="MouvesIpt"><div><input placeholder="Module's Name" type="text" name="Nom_Module"></div></div></li>
+  			<li><label> <div class="MouvesLbl">Module's Specialisation</div> </label> <div class="MouvesIpt"><div><input placeholder="Module's Specialisation" type="text" name="Nom_Spec"></div></div></li>
+  			<li><button>Submit</button></li>
+		</ul>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+	<div id="Hide-Show-Add-EM" style="display:none;">
+		<ul class="Show-List White-Font">
+  			<li><label> <div class="MouvesLbl">Module Element's ID</div> </label> <div class="MouvesIpt"><div><input placeholder="Id must be Unique" type="text" name="ID_El_Module"></div></div></li>
+  			<li><label> <div class="MouvesLbl">Module Element's Name</div> </label> <div class="MouvesIpt"><div><input placeholder="Module Element's Name" type="text" name="Nom_El_Module"></div></div></li>
+  			<li><label> <div class="MouvesLbl">Module Element's coefficient</div> </label> <div class="MouvesIpt"><div><input placeholder="Module Element's coefficient" type="text" name="Coef_Module"></div></div></li>
+  			<li><label> <div class="MouvesLbl">Module Element's Module</div> </label> <div class="MouvesIpt"><div><input placeholder="Module Element's Module" type="text" name="El-Mod-InMod" ></div></div></li>
+  			<li class="Special"><button>Submit</button></li>
+		</ul>
+	</div>
+
+
+
+
+
+
+	<div id="Hide-Show-Vew-EM" style="display:none;">
+		<div class="Show-List  White-Font">
+			<div >	
+				<table>
+				  <tr>
+				  	<th>Module Element's ID</th>
+				    <th>Module Element's Name</th>
+				    <th>Module Element's Coefficent</th>
+				    <th>Module Element's Module</th>
+				    <th class="Not-colored" id="Color-Ajust-01"></th>
+				  </tr>
+				  <tr>
+				    <td>1</td>
+				    <td><lable>Python</lable></td>
+				    <td><lable>5</lable></td>
+				    <td><lable>Programmation</lable></td>
+				    <td class="Not-colored" id="Color-Ajust-01">
+				    <div class="Flexed">
+				    <button class="Mode-02">Update</button><button class="Del">Delete</button>
+				    </div>
+				    </td>
+				  </tr>
+				  <tr>
+				    <td>2</td>
+				    <td><lable>Web</lable></td>
+				    <td><lable>3</lable></td>
+				    <td><lable>Web-desing</lable></td>
+				    <td class="Not-colored" id="Color-Ajust-01">
+				    <div class="Flexed">
+				    <button class="Mode-02">Update</button><button class="Del">Delete</button>
+				    </div>
+				    </td>
+				  </tr>
+				  <tr>
+				    <td>3</td>
+				    <td><lable>JAVA</lable></td>
+				    <td><lable>4</lable></td>
+				    <td><lable>Programmation</lable></td>
+				    <td class="Not-colored" id="Color-Ajust-01">
+				    <div class="Flexed">
+				    <button class="Mode-02">Update</button><button class="Del">Delete</button>
+				    </div>
+				    </td>
+				  </tr>
+				  <tr>
+				    <td>4</td>
+				    <td><lable>Marketing</lable></td>
+				    <td><lable>5</lable></td>
+				    <td><lable>Management</lable></td>
+				    <td class="Not-colored" id="Color-Ajust-01">
+				    <div class="Flexed">
+				    <button class="Mode-02">Update</button><button class="Del">Delete</button>
+				    </div>
+				    </td>
+				  </tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<div id="Hide-Show-Vew-M" style="display:none;">
+		<div class="Show-List White-Font">
+			<div id="Stuff">	
+				<table>
+				  <tr>
+				  	<th>Module's ID</th>
+				    <th>Module's Name</th>
+				    <th>Speciality</th>
+				    <th class="Not-colored" id="Color-Ajust-01"></th>
+				  </tr>
+				  <tr>
+				    <td>1</td>
+				    <td><lable>Web-Desing</lable></td>
+				    <td><lable>ING</lable></td>
+				    <td class="Not-colored" id="Color-Ajust-01">
+				    <div class="Flexed">
+				    <button class="Mode-02">Update</button><button class="Del">Delete</button>
+				    </div>
+				    </td>
+				  </tr>
+				  <tr>
+				    <td>2</td>
+				    <td><lable>Programmation</lable></td>
+				    <td><lable>ING</lable></td>
+				    <td class="Not-colored" id="Color-Ajust-01">
+				    <div class="Flexed">
+				    <button class="Mode-02">Update</button><button class="Del">Delete</button>
+				    </div>
+				    </td>
+				  </tr>
+				  <tr>
+				    <td>3</td>
+				    <td><lable>Management</lable></td>
+				    <td><lable>BFS</lable></td>
+				    <td class="Not-colored" id="Color-Ajust-01">
+				    <div class="Flexed">
+				    <button class="Mode-02">Update</button><button class="Del">Delete</button>
+				    </div>
+				    </td>
+				  </tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="Bg-Color-02">
+	<div id="inlines">
+		<p>Managing the Students / Teacher
+		<select id="Add" onchange="admSelectCheck(this);">
+			<option value="" selected>...</option>
+			<option value="Add-T">Add new Teacher</option> 
+			<option value="Add-S">Add new Student</option> 
+			<option value="Vew-T">Vew all Teacher</option> 
+			<option value="Vew-S">Vew all Student</option> 
+		</select>
+		</p>
+	</div>
+	<div id="Hide-Show-Add-S" style="display:none;">
+		<ul class="Show-List" >
+  			<li><label> <div class="MouvesLbl">Student's ID</div> </label> <div class="MouvesIpt"><div><input placeholder="Id must be Unique" type="text" name="ID_Etd"></div></div></li>
+  			<li><label> <div class="MouvesLbl">Student's First Name</div> </label> <div class="MouvesIpt"><div><input placeholder="Student's First Name" type="text" name="Prenom_Etd"></div></div></li>
+  			<li><label> <div class="MouvesLbl">Student's Last Name</div> </label> <div class="MouvesIpt"><div><input placeholder="Student's Last Name" type="text" name="Nom_Etd"></div></div></li>
+  			<li><label> <div class="MouvesLbl">Student's Age</div> </label> <div class="MouvesIpt"><div><input placeholder="Student's Age" type="text" name="Age_Etd"></div></div></li>
+  			<li><label> <div class="MouvesLbl">Student's Email</div> </label> <div class="MouvesIpt"><div><input placeholder="Student's Email" type="text" name="Email_Etd"></div></div></li>
+  			<li><label> <div class="MouvesLbl">Student's Phone Number</div> </label> <div class="MouvesIpt"><div><input placeholder="Student's Email" type="text" name="Num_tel_Etd"></div></div></li>
+  			<li><label> <div class="MouvesLbl">Student's Parent Email</div> </label> <div class="MouvesIpt"><div><input placeholder="Student's Parent Email" type="text" name="Email_tuteur_Etd"></div></div></li>
+  			<li><label> <div class="MouvesLbl">Student's Parent Phone Number</div> </label> <div class="MouvesIpt"><div><input placeholder="Student's Parent Phone Number" type="text" name="Num_tel_Etd"></div></div></li>
+  			<li><button>Submit</button></li>
+		</ul>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+	<div id="Hide-Show-Add-T" style="display:none;">
+		<ul class="Show-List" >
+  			<li><label> <div class="MouvesLbl">Teacher's ID</div> </label> <div class="MouvesIpt"><div><input placeholder="Id must be Unique" type="text" name="ID_Esg"></div></div></li>
+  			<li><label> <div class="MouvesLbl">Teacher's First Name</div> </label> <div class="MouvesIpt"><div><input placeholder="Teacher's First Name" type="text" name="Prenom_Esg"></div></div></li>
+  			<li><label> <div class="MouvesLbl">Teacher's Last Name</div> </label> <div class="MouvesIpt"><div><input placeholder="Teacher's Last Name" type="text" name="Nom_Esg"></div></div></li>
+  			<li><label> <div class="MouvesLbl">Teacher's Email</div> </label> <div class="MouvesIpt"><div><input placeholder="Teacher's Email" type="text" name="Email_Esg" ></div></div></li>
+  			<li><label> <div class="MouvesLbl">Teacher's Number</div> </label> <div class="MouvesIpt"><div><input placeholder="Teacher's Parent Email Number" type="text" name="Num_Esg"></div></div></li>
+  			<li class="Special"><button>Submit</button></li>
+		</ul>
+	</div>
+
+
+
+
+
+
+	<div id="Hide-Show-Vew-T" style="display:none;">
+		<div class="Show-List">
+			<div   >	
+				<table>
+				  <tr>
+				  	<th>Season ID</th>
+				    <th>Teacher's First Name</th>
+				    <th>Teacher's Last Name</th>
+				    <th>Teacher's Email</th>
+				    <th>Teacher's Phone Number</th>
+				    <th class="Not-colored"></th>
+				  </tr>
+				  <tr>
+				    <td>1</td>
+				    <td><lable>Bakali</lable></td>
+				    <td><lable>Ayoub</lable></td>
+				    <td><lable>B.Ayoub@Gmail.com</lable></td>
+				    <td><lable>+212 648 795 314</lable></td>
+				    <td class="Not-colored">
+				    <div class="Flexed">
+				    <button class="Mode">Update</button><button class="Del">Delete</button>
+				    </div>
+				    </td>
+				  </tr>
+				  <tr>
+				    <td>2</td>
+				    <td><lable>Programmation</lable></td>
+				    <td><lable>qs.dsq</lable></td>
+				    <td><lable>08:20-09:40</lable></td>
+				    <td><lable>08:20-09:40</lable></td>
+				    <td class="Not-colored">
+				    <div class="Flexed">
+				    <button class="Mode">Update</button><button class="Del">Delete</button>
+				    </div>
+				    </td>
+				  </tr>
+				  <tr>
+				    <td>3</td>
+				    <td><lable>Gestion d'entreprise</lable></td>
+				    <td><lable>ks.dj</lable></td>
+				    <td><lable>08:20-09:40</lable></td>
+				    <td><lable>08:20-09:40</lable></td>
+				    <td class="Not-colored">
+				    <div class="Flexed">
+				    <button class="Mode">Update</button><button class="Del">Delete</button>
+				    </div>
+				    </td>
+				  </tr>
+				  <tr>
+				    <td>4</td>
+				    <td><lable>Management</lable></td>
+				    <td><lable>ss.sa</lable></td>
+				    <td><lable>08:20-09:40</lable></td>
+				    <td><lable>08:20-09:40</lable></td>
+				    <td class="Not-colored">
+				    <div class="Flexed">
+				    <button class="Mode">Update</button><button class="Del">Delete</button>
+				    </div>
+				    </td>
+				  </tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<div id="Hide-Show-Vew-S" style="display:none;">
+		<div class="Show-List">
+			<div id="Stuff">	
+				<table>
+				  <tr>
+				  	<th>Season ID</th>
+				    <th>Student's First Name</th>
+				    <th>Student's Last Name</th>
+				    <th>Student's Age</th>
+				    <th>Student's Email</th>
+				    <th>Student's Phone Number</th>
+				    <th>Student's Parent Email</th>
+				    <th>Student's Parent Phone Number</th>
+				    <th class="Not-colored"></th>
+				  </tr>
+				  <tr>
+				    <td>1</td>
+				    <td><lable>Bakali</lable></td>
+				    <td><lable>Ayoub</lable></td>
+				    <td><lable>20</lable></td>
+				    <td><lable>B.Ayoub@Gmail.com</lable></td>
+				    <td><lable>+212 648 795 314</lable></td>
+				    <td><lable>B.Hicham@Gmail.com</lable></td>
+				    <td><lable>+212 648 795 315</lable></td>
+				    <td class="Not-colored">
+				    <div class="Flexed">
+				    <button class="Mode">Update</button><button class="Del">Delete</button>
+				    </div>
+				    </td>
+				  </tr>
+				  <tr>
+				    <td>2</td>
+				    <td><lable>Programmation</lable></td>
+				    <td><lable>qs.dsq</lable></td>
+				    <td><lable>08:20-09:40</lable></td>
+				    <td><lable>08:20-09:40</lable></td>
+				    <td><lable>08:20-09:40</lable></td>
+				    <td><lable>08:20-09:40</lable></td>
+				    <td><lable>08:20-09:40</lable></td>
+				    <td class="Not-colored">
+				    <div class="Flexed">
+				    <button class="Mode">Update</button><button class="Del">Delete</button>
+				    </div>
+				    </td>
+				  </tr>
+				  <tr>
+				    <td>3</td>
+				    <td><lable>Gestion d'entreprise</lable></td>
+				    <td><lable>ks.dj</lable></td>
+				    <td><lable>08:20-09:40</lable></td>
+				    <td><lable>08:20-09:40</lable></td>
+				    <td><lable>08:20-09:40</lable></td>
+				    <td><lable>08:20-09:40</lable></td>
+				    <td><lable>08:20-09:40</lable></td>
+				    <td class="Not-colored">
+				    <div class="Flexed">
+				    <button class="Mode">Update</button><button class="Del">Delete</button>
+				    </div>
+				    </td>
+				  </tr>
+				  <tr>
+				    <td>4</td>
+				    <td><lable>Management</lable></td>
+				    <td><lable>ss.sa</lable></td>
+				    <td><lable>08:20-09:40</lable></td>
+				    <td><lable>08:20-09:40</lable></td>
+				    <td><lable>08:20-09:40</lable></td>
+				    <td><lable>08:20-09:40</lable></td>
+				    <td><lable>08:20-09:40</lable></td>
+				    <td class="Not-colored">
+				    <div class="Flexed">
+				    <button class="Mode">Update</button><button class="Del">Delete</button>
+				    </div>
+				    </td>
+				  </tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="General-Vew-Style">
+	<h1>Absences By Modules / Modules Element</h1>
+
+	<div class="Flexed">
+		<div class="Module-Titles">Web-Desing Total Absence : <span>01</span>
+				<div class="Flexed">
+					<div class="El-Mod">Web :</div>
+					<div class="Num-Abs"><span>01</span></div>
+				</div>
+				<div class="Flexed">
+					<div class="El-Mod">Css/Js :</div>
+					<div class="Num-Abs"><span>00</span></div>
+				</div>
+		</div>
+		<div class="Module-Titles">Programmation Total Absence : <span>05</span>
+				<div class="Flexed">
+					<div class="El-Mod">Python :</div>
+					<div class="Num-Abs"><span>03</span></div>
+				</div>
+				<div class="Flexed">
+					<div class="El-Mod">JAVA :</div>
+					<div class="Num-Abs"><span>02</span></div>
+				</div>
+		</div>
+		<div class="Module-Titles">Management Total Absence : <span >20</span>
+				<div class="Flexed">
+					<div class="El-Mod">Gention-Enterprise :</div>
+					<div class="Num-Abs"><span>15</span></div>
+				</div>
+				<div class="Flexed">
+					<div class="El-Mod">MArketing :</div>
+					<div class="Num-Abs"><span>05</span></div>
+				</div>
+		</div>
+	</div>
+	<h1>Total Absent</h1> <h1>26</h1>
+
+
+</div>
+
+
+
+<div id="Footer-Color">
+  <div class="Center-Box">
+    <div id="left-Logo">
+      <div>
+        <img src="./icon/Missing Logo-01.png">
+      </div>
+    </div>
+    <div id="Right-Info">
+        <div class="Hov">
+          <img src="./icon/localisation-icon-01.png" ></img><br><br><p>234 Wall Street<br>East Newyork, NY 20001</p>
+        </div>
+        <div class="Hov">
+          <img src="./icon/tel-icon-01.png" ></img><br><br><p>(+212) 699 554 422<br>(+212) 539 360 022</p>
+        </div>
+        <div class="Hov">
+          <img src="./icon/web2-icon-01.png" ></img><br><br><p>info@website.com<br>Support@website.com</p>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<br>
+<label id="lbltipAddedComment" style="display:none;">test</label>
+<script>
+function addLoadEvent(func) {  
+      var oldonload = window.onload;  
+      if (typeof window.onload != 'function') {  
+        window.onload = func;  
+      } else {  
+        window.onload = function() {  
+          if (oldonload) {  
+            oldonload();  
+          }  
+          func();  
+        }  
+      }  
+    }  
+
+   addLoadEvent(function() {  
+document.getElementById('lbltipAddedComment').innerHTML = 'This is a test Subject please do not take consideration';
+
+    });  
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

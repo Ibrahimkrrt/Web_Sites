@@ -1,0 +1,302 @@
+*{
+	margin: 0;
+	padding:0;
+	font-family: "Adam";
+	text-align: center;
+}
+
+*:focus, button:focus{
+    outline: none;
+}
+h1,
+h2 {
+    margin: 0;
+    color: #eee;
+    -moz-text-shadow: 0 3px 3px #000000;
+    -webkit-text-shadow: 0 3px 3px #000000;
+    text-shadow: 0 3px 3px #000000;
+}
+    
+h1 {
+    font-size: 60px;
+    margin: 0 0 10px;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 18px;
+}
+header{
+    height: 10%;
+}
+/*====================================*//*====================================*//*====================================*/
+/*====================================*//*====================================*//*====================================*/
+/*====================================*//*====================================*//*====================================*/
+.Center-Box{
+    width: 75%;
+    margin: 0 auto;
+}
+
+
+#Header .Center-Box{
+    background-color: #04B4AE;
+    z-index: 100;
+}
+
+#Horizonal {
+    width: 100%;
+    position: fixed;
+
+}
+
+#Horizonal nav{
+    display: flex;
+    text-align: right;
+    text-align: center;
+    padding:1%;
+}
+
+#Horizonal nav div {
+    flex: 1;
+    text-align: center;
+}
+
+#Horizonal nav div a{
+    text-decoration: none;
+    cursor: pointer;
+    color : #fff;
+    font-size: 2em;
+
+}
+
+#Horizonal nav div img{
+    float: left;
+    width: 30;
+}
+/*====================================*//*====================================*//*====================================*/
+/*BUTTON STYLE*/
+.dropbtn {
+    background: transparent; 
+    color: #FFF;
+    /*padding: 16px;*/
+    font-size: 1.7em;
+    border: none;
+    cursor: pointer;
+}
+
+/* DropDown Content is "Hidden" with "display: none;" */
+.DropDown_Content{
+    display: none;
+    position: absolute;
+    background: transparent;
+    min-width: 15%;
+    margin-left:5%;
+
+    /*box-shadow: 0px 8px 16px rgba(0,0,0,0.5); */
+
+}
+/* Links Decoration inside the DropDown */
+.DropDown_Content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align :right;
+    
+}
+/* Show the DropDown Content on hover */
+.DropDown:hover .DropDown_Content {
+    display: block;
+    background:#04B4AE;
+}
+
+/*====================================*//*====================================*//*====================================*/
+#Bg_Img{
+    background: url('../images/BG-03.jpg') no-repeat right;
+    width: 100%;
+    height: 350px;
+    padding-top: 10%;
+    background-color: #001100 ;
+}
+#Bg_Img .Center-Box{
+    height: 100%;
+    /*background-color: red;*/
+    /*padding-top: 5%;
+    padding-bottom:-5%; */
+}
+#CDT {
+    font-size: 60px;
+    color: #eee;
+    margin: 70px 0 100px;
+    font-weight: bold;
+}
+
+#CDT .number-wrapper {
+    margin: 10px;
+    position: relative;
+}
+
+#CDT .number {
+    display: inline-block;
+    display: inline;
+    zoom: 1;
+    padding: 0 12px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+}
+       
+#CDT .line {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 52%;
+    left: 0;
+}
+
+
+       
+.caption {
+   font-size: 12px;
+   position: absolute;
+   bottom: -30px;
+   left: 0;
+   text-align: center;
+   width: 100%;
+   color: #FFF;
+}
+
+/*====================================*//*====================================*//*====================================*/
+/*====================================*//*====================================*//*====================================*/
+/*====================================*//*====================================*//*====================================*/
+#Bg-color{
+    background-color: #2E2E2E;
+    /*height: 700px;*/
+}
+
+#Top-content{
+    padding: 50px;
+}
+
+#Bot-content{
+    padding-bottom: 100px;
+    color: #FFF;
+    text-align: left;
+    display: block;/*none;*/
+
+}
+
+
+#row-01{
+    display: flex;
+    padding-top: 2%;
+}
+
+#row-01 div{
+    flex: 1;
+    border-bottom: 1px solid #FFF ;
+}
+
+
+.Tleft{
+    border-right: 1px solid #FFF ;
+}
+
+.Tright{
+    border-left: 1px solid #FFF ;
+}
+.line{
+}
+
+.number-wrapper #Bot-content{
+    display: block;
+}
+/*==============================================================================*/
+
+#Footer-Color {
+    background-color:#E1E1E1;
+    height: 300px;
+}
+#Footer-Color .Center-Box {
+    height: 100%;
+    width: 100%;
+    /*background-color:red;*/
+}
+
+#Footer-Color .Center-Box #Right-Info {
+    float: right;
+    display: flex;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+}
+
+#Footer-Color .Center-Box #Right-Info div{
+    flex: 1;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    margin-top: 20%;
+    padding-top: 10%;
+    word-wrap: break-word;
+    height: 50%;
+
+}
+#Footer-Color .Center-Box #Right-Info .Hov img{
+    /*box-shadow: -1px 2px 10px 3px rgba(0, 0, 0, 0.3) inset;*/
+    -webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+
+}
+#Footer-Color .Center-Box #Right-Info .Hov p{
+    /*box-shadow: -1px 2px 10px 3px rgba(0, 0, 0, 0.3) inset;*/
+    -webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+
+}
+
+#Footer-Color .Center-Box #Right-Info .Hov:hover img{
+
+    -webkit-filter: hue-rotate(45deg);
+       -moz-filter: hue-rotate(45deg);
+            filter: hue-rotate(45deg);
+    
+}
+#Footer-Color .Center-Box #Right-Info .Hov:hover p{
+    text-shadow:1px 1px 5px #000;
+    
+}
+
+#Footer-Color .Center-Box #left-Logo {
+    float: left;
+    text-align: center;
+    /*background-color: white;*/
+    width: 25%;
+    height: 100%;
+}
+#Footer-Color .Center-Box #left-Logo div{
+    margin: 15%;
+    /*background-color: red;*/
+}
+#Footer-Color .Center-Box #left-Logo img{
+    width: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*====================================*//*====================================*//*====================================*/
+@font-face {
+    font-family: Adam;
+    src: url(Adam.otf);
+}/*====================================*//*====================================*//*====================================*/

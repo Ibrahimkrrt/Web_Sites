@@ -1,0 +1,437 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto Slab', serif;
+	font-size: 20px;
+}
+
+nav{
+	width: 100%;
+	height: 75px;
+	background-color: rgba(255,255,255,0.2);
+	border-bottom: 1px solid #E2E2E2;
+	position: fixed;
+	z-index: 100;
+	-webkit-transition: 0.3s;
+       -moz-transition: 0.3s;
+         -o-transition: 0.3s;
+            transition: 0.3s;
+}
+h1{
+	font-size: 40;
+}
+#nav_container{
+	display: table;
+	margin: 0 auto;
+	height: 100%;
+	width: 75%;
+	
+	
+}
+
+#nav_container #Content_Align{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#nav_container #Content_Align div {
+	display: flex;
+
+}
+
+#nav_container #Content_Align div #Left_Content {
+	flex: 1;
+	text-decoration:none;
+	color: #fff;
+}
+
+#nav_container #Content_Align div #Left_Content img{
+	width: 70px;
+}
+
+#nav_container #Content_Align div #Right_Content {
+	flex: 1;
+	text-decoration:none;
+	display: flex;
+	text-align: center;
+}
+
+#nav_container #Content_Align div #Right_Content_S{
+	display: none;
+	-webkit-transition: 0.3s;
+       -moz-transition: 0.3s;
+         -o-transition: 0.3s;
+            transition: 0.3s;
+}
+
+#nav_container #Content_Align div #Right_Content_S button{
+	text-decoration:none;
+	display: flex;
+	border: none;
+	background: transparent;
+	text-align: center;
+	font-size: 35px;
+	cursor: pointer;
+}
+
+#nav_container #Content_Align div #Right_Content span{
+	padding-top: 15px;
+	flex: 1;
+}
+
+.Nav_titles{
+	text-decoration:none;
+	color: #fff;/*rgb(255, 15, 101);/*ff0f65*/
+	-webkit-transition: 0.3s;
+       -moz-transition: 0.3s;
+         -o-transition: 0.3s;
+            transition: 0.3s;
+}
+.Stacked{
+	position: absolute;
+	top: 6px;
+}
+#white{
+	opacity: 1;
+	-webkit-transition: 0.3s;
+       -moz-transition: 0.3s;
+         -o-transition: 0.3s;
+            transition: 0.3s;
+}
+#black{
+	opacity: 0;
+	-webkit-transition: 0.3s;
+       -moz-transition: 0.3s;
+         -o-transition: 0.3s;
+            transition: 0.3s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    right: 0;
+    background-color: #FFF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-left: 1px solid #E2E2E2;
+    -webkit-transition: 0.3s;
+       -moz-transition: 0.3s;
+         -o-transition: 0.3s;
+            transition: 0.3s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgba(255, 15, 101,0.5);
+    display: block;
+    -webkit-transition: 0.3s;
+       -moz-transition: 0.3s;
+         -o-transition: 0.3s;
+            transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: rgb(255, 15, 101);
+}
+
+.sidenav .closebtn {
+	color: #000;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+header{
+	height: 900px;
+	background: url('../PDS/drink_02.jpg') ;
+}
+#Container_00{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+	-webkit-transition : all 0.2 ease;
+	   -moz-transition : all 0.2 ease;
+	     -o-transition : all 0.2 ease;
+			transition : all 0.2 ease;
+}
+#Centered{
+	position: fixed;
+	margin: 0 auto;
+	width: 100%;
+	height: 900px;
+	display: table;
+	margin-top: 0px;
+	-webkit-transition : all 0.2 ease;
+	   -moz-transition : all 0.2 ease;
+	     -o-transition : all 0.2 ease;
+			transition : all 0.2 ease;
+}
+#Centered div{
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	color: #fff;
+	
+	
+}
+#HighLight{
+	font-size: 150px;
+}
+
+.Line{
+	display: block;
+	width: 50px;
+	height: 2px;
+	background: rgb(255, 15, 101);
+	text-align: center;
+	margin: 25px auto;
+
+	
+}
+
+#Container_01{
+	z-index: 1;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	width: 100%;
+}
+#content_01{
+	width: 76%;
+	margin: 0 auto;
+}
+#Title{
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 80px;
+}
+#Title img{
+	width: 60px;
+}
+#Title h1{
+	font-size: 40;
+}
+#Title p{
+	opacity: 0.7;
+	width: 50%;
+    word-wrap: break-word;
+    margin: 0 auto;
+}
+
+.Split_menu{
+	display: flex;
+}
+
+.Split_menu div{
+	flex: 1;
+	padding: 10px;
+}
+.Sub_title img{
+	width: 50px;
+	height: 60px;
+	display: inline-block;
+}
+.Sub_title div {
+	display: inline-block;
+}
+.Sub_title h3{
+	font-style: italic;
+	display: table-cell;
+	vertical-align: middle;
+	
+}
+.Centered{
+	width: 50%;
+	margin: 0 auto;
+}
+
+.Center_menu .Sub_title img{
+	background: red;
+}
+
+.Element{
+	padding: 10px;
+	border-bottom: 1px dotted #777;
+	display: flex;
+}
+.Element img{
+	display: block;
+	max-width: 100px;
+	max-height: 75px;
+	border-radius: 5px ;
+	flex: 1;
+}
+.Element_Content{
+	flex: 1;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	vertical-align: top;
+
+}
+.Element_Content p{
+	padding: 10px;
+	font-size: 15px;
+	opacity: 0.7;
+}
+.El_head{
+	display: flex;
+	padding: 0px;
+	margin: 0px;
+}
+.El_head h3{
+	flex: 1;
+}
+.Price{
+	flex: 1;
+	text-align: right;
+	color: rgb(255, 15, 101)
+}
+#Container_02{
+	z-index: 1;
+	width: 100%;
+	background: url('../PDS/drink_00.jpg') fixed;
+	text-align: center;
+}
+#Container_02 h1 {
+	background: rgba(0,0,0,0.6);
+	padding-top: 100px;
+	color: #fff;
+}
+#Blackend{
+	background: rgba(0,0,0,0.6);
+	padding-top: 50px;
+	padding-bottom: 100px;
+	
+
+}
+#content_02{
+	width: 100%;
+	display: flex;
+}
+#content_02 div{
+	flex: 1;
+	text-align: center;
+
+}
+#Blackend #content_02 .Event_Block{
+	margin: 0 auto;
+	background: #FFF;
+	width: 350px;
+	padding: 10px;
+}
+.box{
+	border: 2px solid #E1E1E1;
+	padding: 30px;
+	
+}
+.Head_line{
+	font-size: 30px;
+}
+.Date{
+	opacity: 0.5;
+}
+
+footer {
+	z-index: 10;
+	background: #1E1E1E;
+	color: #FFF;
+
+}
+footer #Container_03 {
+	padding-top: 50px;
+	margin: 0 auto;
+	display: flex;
+	width: 75%;
+	padding-bottom: 50px;
+}
+
+footer #Container_03 h1{
+	text-align: center;
+	padding-bottom: 20px;
+	font-size: 20px;
+	opacity: 0.8;
+}
+
+footer #Container_03 div {
+	flex: 1;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+footer #Container_03 ul {
+	text-decoration: none;
+}
+footer #Container_03 p {
+	font-size: 13px;
+	text-decoration: none;
+}
+
+footer #Container_03 a{
+	font-size: 13px;
+	padding: 5px;
+	text-decoration: none;
+	color: #FFF;
+}
+.hov{
+
+}
+.hov:hover img{
+	-webkit-filter: hue-rotate(45deg);
+	   -moz-filter: hue-rotate(45deg);
+	        filter: hue-rotate(45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1550px) {
+#nav_container #Content_Align div #Right_Content_S{display: none;}
+}
+
+@media screen and (max-width: 1150px) {
+#Blackend #content_02 div .Event_Block{	width: 300px;}
+}
+
+@media screen and (max-width: 1037px) {
+#nav_container #Content_Align div #Right_Content  {display: none;}
+#nav_container #Content_Align div #Right_Content_S{display: block;}
+.Split_menu{display: block;}
+.Centered{ width: auto;}
+#content_02{display: block;}
+#Blackend #content_02 div .Event_Block{	width: 80%; margin-top: 20px;}
+}
+
+@media screen and (max-width: 500px) {
+header{height: 700px;}
+}
